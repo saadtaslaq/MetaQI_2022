@@ -1,0 +1,32 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-metaqi-dev-182645-authRole",
+      "UnauthRoleArn": "arn:aws:iam::242613069121:role/amplify-metaqi-dev-182645-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::242613069121:role/amplify-metaqi-dev-182645-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-metaqi-dev-182645-deployment",
+      "UnauthRoleName": "amplify-metaqi-dev-182645-unauthRole",
+      "StackName": "amplify-metaqi-dev-182645",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:242613069121:stack/amplify-metaqi-dev-182645/72fd80a0-cddf-11ec-97d3-067295c5bcfc",
+      "AmplifyAppId": "d9ppuw5uaaqcd"
+    }
+  },
+  "api": {
+    "ConferenceAPI": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  }
+}
